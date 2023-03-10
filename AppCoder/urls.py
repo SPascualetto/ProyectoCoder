@@ -9,5 +9,5 @@ urlpatterns = [
     path('profesores/', views.profesores),
     path('estudiantes/', views.estudiantes),
     path('entregables/', views.entregables),   
-    path('AppCoder/', include('AppCoder.urls')),
+    path('appcoder/', include('appcoder.urls')),
 ]
