@@ -1,13 +1,10 @@
-from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
 from AppCoder import views
 
-
 urlpatterns = [
-    path('', views.inicio),
-    path('cursos/', views.cursos),
-    path('profesores/', views.profesores),
-    path('estudiantes/', views.estudiantes),
-    path('entregables/', views.entregables),   
-    path('appcoder/', include('appcoder.urls')),
+    path("", views.inicio),
+    path('alumnos', views.alumnos),
+    path('profesores', views.profesores),
+    path("entregables", views.entregables)
 ]
+                            

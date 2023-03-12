@@ -1,16 +1,13 @@
 from django.shortcuts import render
 
 def inicio(request):
-    return render(request, "appcoder/inicio.html")
-
-def cursos(request):
-   return render(request, "appcoder/cursos.html")
+    return render(request, "inicio.html")
 
 def profesores(request):
-    return render(request, "appcoder/profesores.html")
+    return render(request, "profesores.html")
 
-def estudiantes(request):
-    return render(request, "appcoder/estudiantes.html")
+def alumnos(request):
+    return render(request, "alumnos.html")
 
 def entregables(request):
-    return render(request, "appcoder/entregables.html")
+    return render(request, "entregables.html")
