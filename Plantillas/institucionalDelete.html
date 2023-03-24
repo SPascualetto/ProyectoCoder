@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institucional Borrar</title>
+</head>
+<body>
+
+    {% for p in institcional %}
+
+        <li>{{p}}</li>
+        <button>
+            <a href="{% url 'institucionalDelete' p.nombre %}"> Eliminar </a>
+        </button>
+
+    {% endfor %}
+
+    <a href="institucional"> Agregar otro alumno</a>
+    
+</body>
+</html>
