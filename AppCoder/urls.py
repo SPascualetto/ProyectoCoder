@@ -7,5 +7,5 @@ urlpatterns = [
     path('nuevoposteo/', AddPostView.as_view(), name='nuevoposteo'),
     path('posteo/edit/<int:pk>', UpdatePostView.as_view(), name='modificarposteo'),
     path('posteo/<int:pk>/remove', DeletePostView.as_view(), name='borrarposteo'),
-    path('acercademi/', AcercademiView.as_view(), name='acercademi')
+    path('acercademi/', AcercademiView.as_view(), name='acercademi'),
 ]
