@@ -12,13 +12,13 @@ Campus Virtual de la Facultad de Ingenieria
 
 1. Página de inicio. En la misma se puede encontrar los posteos realizados.
 2. Registro de usuario.
-3. Login, a partir del cual se puede realizar 
-a. Agregar Posteo 
-b. Modificar Posteo
-c. Elimiar Posteo 
-d. Editar Perfil
-e. Acerca de mi 
-f. Salir
+3. Login, a partir del cual se puede realizar: 
+4. Agregar Posteo 
+5. Modificar Posteo
+6. Elimiar Posteo 
+7. Editar Perfil
+8. Acerca de mi 
+9. Salir
 
 
 # Herramientas utilizadas:
