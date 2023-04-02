@@ -1,6 +1,6 @@
 # ProyectoCoder
-# Alumno: Santiago Pascualetto
-
+# Alumno: Santiago Ezequiel Pascualetto
+# Curso: Python - Comisión 34670 
 # Nombre del Proyecto
 Campus Virtual de la Facultad de Ingenieria
 
