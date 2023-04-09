@@ -1,0 +1,31 @@
+
+{% extends 'base.html'%}
+
+{% block content %}
+  
+
+<h1>Campus Virtual de la Facultad de Ingenieria - UBA</h1>
+<ul>
+{% for post in object_list %}
+    <li><a href="{% url 'detalles' post.pk  %}">{{ post.Titulo }}</a> - {{ post.Nombre }}
+    {{ post.post_date }} <small>
+    </small><br/>
+    {{post.Cuerpo}}</li>
+        {% if user.is_authenticated %}
+          -<a href="{% url 'modificarposteo' post.pk  %}">(Editar)</a> 
+          <a href="{% url 'borrarposteo' post.pk  %}">(Borrar)</a>
+        {% endif %}  
+{% endfor %}
+
+{% block contenidoQueCambia %}
+  {% if avatar %}
+    <img src="{{ avatar.imagen.url }}" alt="Avatar de {{ user.username }}" class="avatar">
+  {% else %}
+    <div class="default-avatar">{{ user.username|slice:":1" }}</div>
+  {% endif %}
+
+{% endblock %}
+
+  </ul>
+
+{% endblock %}
