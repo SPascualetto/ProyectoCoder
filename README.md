@@ -13,8 +13,9 @@
 5. Modificar Posteo
 6. Elimiar Posteo 
 7. Editar Perfil
-8. Acerca de mi 
-9. Salir
+8. Agregar Avatar
+9. Acerca de mi 
+10. Salir
 
 # Herramientas utilizadas:
 1. Bootstrap
