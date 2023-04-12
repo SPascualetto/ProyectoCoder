@@ -1,0 +1,24 @@
+{% extends 'padre.html' %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+    <div class="text-center">
+        <img height="40px" src="{{url}}">
+        <h3>Hola {{user.username}}</h3>
+    </div>
+
+    <!-- colocamos lo que va a cambiar -->
+    {% if cursos %}
+    <p>Estamos buscando el: {{camada}}</p>
+
+    <ul>
+        {% for curso in cursos %}
+            <li> {{curso.nombre}}</li>
+            <li> {{curso.camada}}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+{% endblock %}
+<p style="color:red">{{respuesta}}</p>
